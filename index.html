@@ -31,11 +31,11 @@
 
             <div class="col-md-3">
               <ul class="list-group">
-                <li class="list-group-item"><span>Date:</span>  </li>
-                <li class="list-group-item"><span>On air:</span>  </li>
-                <li class="list-group-item"><span>Time:</span>  </li>
-                <li class="list-group-item"><span>Season:</span>  </li>
-                <li class="list-group-item"><span>Genre:</span>  </li>
+                <li class="list-group-item"><span>Date:</span> {{program.datetime | date}} </li>
+                <li class="list-group-item"><span>On air:</span> {{program.datetime | date: 'EEEE'}} </li>
+                <li class="list-group-item"><span>Time:</span> {{program.datetime | date: 'shortTime'}} </li>
+                <li class="list-group-item"><span>Season:</span> {{program.season}} </li>
+                <li class="list-group-item"><span>Genre:</span> {{program.genre}} </li>
               </ul>
             </div>
             
